@@ -7,16 +7,16 @@ def estimate_pi():
             print("Please enter a positive integer.")
             return
 
-        points_inside_circle = 0
+        points_in_circle = 0
 
         for i in range(total_points):
             x = random.uniform(-1, 1)
             y = random.uniform(-1, 1)
 
             if x ** 2 + y ** 2 < 1:
-                points_inside_circle += 1
+                points_in_circle += 1
 
-        pi_approximation = 4 * points_inside_circle / total_points
+        pi_approximation = 4 * points_in_circle / total_points
 
         print(f"Approximated value of pi: {pi_approximation}")
 
